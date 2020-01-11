@@ -1,0 +1,186 @@
+.right-side-tools {
+  position: relative;
+  flex-shrink: 0;
+  height: 100vh;
+  width: 280px;
+  background-color: $bgColorBlock;
+  margin-left: 10px;
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .animation-preview {
+    margin-top: 40px;
+    height: 220px;
+    width: 220px;
+    background-color: $bgColorSemi;
+    border: 4px solid $borderColor;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+    &.full-screen-preview {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 9999;
+      margin: 0;
+      .full-screen {
+        margin: 0;
+      }
+    }
+  }
+  #animation-preview {
+    width: 220px;
+    height: 220px;
+    image-rendering: pixelated;
+  }
+  .frame-rate {
+    width: 120px;
+    height: 30px;
+    top: 34%;
+    right: 20%;
+    position: absolute;
+  }
+  .layers-wrapper {
+    width: 180px;
+    background-color: $bgColorMain;
+    border: 4px solid $borderColor;
+    margin-top: 40px;
+    .concrete-layer {
+      height: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $borderColor;
+      &:hover {
+        background-color: $bgColorLighter;
+        cursor: pointer;
+      }
+      button {
+        height: 100%;
+      }
+      .layer-name {
+        padding: 5px;
+        line-height: 28px;
+        font-size: 0.8em;
+      }
+      form {
+        padding: 0;
+        flex-grow: 1;
+        height: 100%;
+        input {
+          box-sizing: border-box;
+          width: 100%;
+          border-radius: 5px;
+          border-color: $specialColor;
+          padding: 4px;
+          margin: 0;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+    .active-layer {
+      background-color: $bgColorSemi;
+      &:hover {
+        background-color: $bgColorSemi;
+        cursor: pointer;
+      }
+    }
+    .layers-title {
+      box-sizing: border-box;
+      line-height: 35px;
+      padding-left: 7px;
+      text-align: start;
+      height: 35px;
+      width: 100%;
+      background-color: $bgColorMain;
+    }
+    .layers-tools {
+      display: flex;
+      height: 30px;
+      width: 100%;
+      background-color: $bgColorLighter;
+      border-top: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
+      &__add-new-layer-btn {
+        // border: 0px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 1px solid $borderColor;
+        background-color: $bgColorSemi;
+        width: 30px;
+      }
+    }
+  }
+  .colors-container {
+    height: 180px;
+    width: 180px;
+    background-color: $bgColorSemi;
+    border: 4px solid $borderColor;
+    margin-top: 40px;
+
+  }
+  .full-screen {
+    width: 30px;
+    height: 30px;
+    background-color: #121428;
+    display: block;
+    margin-top: -10%;
+  }
+  .fps-slider {
+    display: flex;
+  }
+  .fps-counter {
+    margin-top: 20px;
+  }
+  input[type=range] {
+    -webkit-appearance: none;
+    background-color: transparent !important;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    cursor: pointer;
+    background: #d5cfdd;
+    border-radius: 21.6px;
+    border: 1px solid rgba(218, 208, 224, 0.79);
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    border: 1.8px solid rgba(0, 0, 6, 0.77);
+    border-radius: 28px;
+    background: #6b6b64;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.8px;
+  }
+
+  /* Track */
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 6.4px;
+  }
+  input[type=range]::-moz-range-track {
+    height: 6.4px;
+  }
+  input[type=range]::-ms-track {
+    height: 6.4px;
+  }
+
+  /* Thumb */
+  input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 8px;
+  }
+  input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 8px;
+  }
+}

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PenSizeBar snapshot 1`] = `
+<div
+  className="pen-size"
+>
+  <div
+    className="square activeTool"
+  >
+    <img
+      className="size-one"
+      src="test-file-stub"
+    />
+  </div>
+  <div
+    className="square activeTool"
+  >
+    <img
+      className="size-two"
+      src="test-file-stub"
+    />
+  </div>
+  <div
+    className="square activeTool"
+  >
+    <img
+      className="size-three"
+      src="test-file-stub"
+    />
+  </div>
+  <div
+    className="square activeTool"
+  >
+    <img
+      className="size-four"
+      src="test-file-stub"
+    />
+  </div>
+</div>
+`;

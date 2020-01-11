@@ -1,0 +1,15 @@
+.user-list {
+  button {
+    margin: 2.5px;
+    border-radius: 12%;
+    width: 70px;
+    height: 40px;
+    color: #0d0d26e3;
+    font-size: 13px;
+    font-family: "Arial Black", Gadget, sans-serif;
+  }
+  button :hover {
+    background-position: 0 -41px;
+    background-color: black;
+  }
+}

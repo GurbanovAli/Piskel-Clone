@@ -1,0 +1,46 @@
+@import './Presets.scss';
+
+.pen-size {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  margin-top: 7px;
+  margin-right: -20px;
+  color: azure;
+  img {
+
+  }
+  .size-one {
+    width: 10px;
+    height: 10px;
+    padding-top: 30%;
+  }
+  .size-two {
+    width: 15px;
+    height: 15px;
+    padding-top: 25%;
+  }
+  .size-three {
+    width: 20px;
+    height: 20px;
+    padding-top: 16%;
+  }
+  .size-four {
+    width: 25px;
+    height: 25px;
+    padding-top: 7%;
+  }
+  .square {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    border: 1px solid wheat;
+    text-align: center;
+  }
+  .activeTool {
+    border: 3px solid $specialColor;
+  }
+
+}
