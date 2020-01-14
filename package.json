@@ -1,11 +1,15 @@
+
 {
+  "homepage":"https://github.com/GurbanovAli/Piskel-Clone",
   "name": "Piskel-Clone",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "jest",
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "react-scripts start",
     "build": "webpack --mode production --optimize-minimize",
     "dev": "webpack-dev-server",
     "lintfix": "eslint src/**/*.js --fix"
@@ -18,9 +22,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GurbanovAli"
+    "url": "https://github.com/GurbanovAli/Piskel-Clone"
   },
-  "homepage": "https://github.com/GurbanovAli",
+  "homepage": "https://github.com/GurbanovAli/Piskel-Clone",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
@@ -39,6 +43,7 @@
     "eslint-plugin-react": "^7.13.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.0.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
     "jest": "^24.9.0",

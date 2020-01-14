@@ -8,7 +8,6 @@ import '../scss/index.scss';
 const Page = () => (
     <BrowserRouter>
         <main>
-            <header><User /></header>
             <Route exact path="/" component={Landing} />
             <Route path="/piskel" component={Footer} />
         </main>
